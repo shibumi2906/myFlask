@@ -1,10 +1,7 @@
-import os
-print("Current Working Directory:", os.getcwd())  # Добавлено для проверки пути
-
 from flask import Flask, render_template
 from datetime import datetime
 
-app = Flask(__name__, template_folder='../templates')
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -13,5 +10,6 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
