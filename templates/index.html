@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+            <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to the Home Page</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='img/аватар бота.jpg') }}" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>Светлана Напряжная</b></h4>
+                <p>знаток всего и даже больше</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
