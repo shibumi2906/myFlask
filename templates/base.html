@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>{% block title %}My Website{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -14,15 +14,8 @@
             <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
         </ul>
     </nav>
-    <h1>Welcome to the Contacts Page</h1>
-
     <div class="content">
-        <div class="contact-info">
-            <h2>Контактная информация</h2>
-            <p>Телефон: 12345678</p>
-            <p>Адрес: третья улица строителей 25</p>
-        </div>
+        {% block content %}{% endblock %}
     </div>
 </body>
 </html>
-

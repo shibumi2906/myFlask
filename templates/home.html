@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Home Page</h1>
+<div class="card-container">
+    <img src="{{ url_for('static', filename='img/photo_2024-05-11_17-06-33.jpg') }}" alt="Home Image">
+</div>
+<div class="text-container">
+    <p>This is the home page content. Here you can find general information about our website.</p>
+</div>
+{% endblock %}
